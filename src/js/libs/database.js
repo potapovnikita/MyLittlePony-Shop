@@ -1,6 +1,9 @@
 import defaultOptions from './defaultOptions'
 
 class Database {
+    /**
+     * Создание списка товаров при загрузке страницы
+     */
     getPonies() {
         const getRandomValue = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
 
@@ -24,9 +27,6 @@ class Database {
                 kind,
             }
         })
-
-
-
     }
 }
 

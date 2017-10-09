@@ -6,6 +6,6 @@ npm install
 
 # Run
 npm run start 
-(Project will run at http://localhost:1000/)
+(Project will run at http://localhost:2222/)
 
 

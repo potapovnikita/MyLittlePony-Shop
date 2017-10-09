@@ -101,6 +101,10 @@ export default class extends Component {
         })
     }
 
+    /**
+     * фильтрация по цене
+     * @param name
+     */
     changePrice(name) {
         let { value } = this.refs[name]
         const { price } = this.state
@@ -112,11 +116,19 @@ export default class extends Component {
         })
     }
 
+    /**
+     * фильтрация по цвету
+     * @param name
+     */
     changeColor(name) {
         const { checked } = this.refs[name]
         this.setState({ color:  checked ? name : '' })
     }
 
+    /**
+     * фильтрация по виду пони
+     * @param name
+     */
     changeKind(name) {
         const { checked } = this.refs[name]
         const { kind } = this.state

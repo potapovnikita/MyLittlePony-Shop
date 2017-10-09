@@ -8,9 +8,11 @@ import * as actions from './store/constants'
 import DatabaseProvider from './libs/database'
 import '../stylus/index.styl'
 
-
 const Database = new DatabaseProvider()
 
+/**
+ * Создание списка товаров при загрузке страницы
+ */
 const getPonies = async function() {
     const data = await Database.getPonies()
     if (data) {
@@ -33,7 +35,5 @@ const render = (Component) => {
 }
 
 render(Main)
-
-
 
 

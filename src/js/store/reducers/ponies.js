@@ -1,4 +1,3 @@
-
 export default function poniesList(state = [], action) {
     switch (action.type) {
         case 'GET_PONIES_LIST':

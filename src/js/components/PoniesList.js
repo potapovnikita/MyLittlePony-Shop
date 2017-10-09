@@ -19,18 +19,32 @@ export default class extends Component {
         }
     }
 
+    /**
+     * Показываем больше таваров на странице
+     */
     showMorePonies() {
         this.setState({ defaultLimit: this.state.defaultLimit + 20})
     }
 
+    /**
+     * Возвращаемся к исходному значению количества товаров на странице
+     */
     hideMorePonies() {
         this.setState({ defaultLimit: DEFAULT_LIMIT})
     }
 
+    /**
+     * Получение длину отфильтрованного списка товаров
+     * @param length
+     */
     getFilteredLength(length) {
         filteredLength = length
     }
 
+    /**
+     * Получение списка товаров
+     * @returns {XML}
+     */
     getItems() {
         const { poniesList, filterValues } = this.props
         const filteredPoniesList = Filter.getFilteredValues(poniesList, filterValues)

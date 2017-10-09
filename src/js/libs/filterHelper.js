@@ -1,4 +1,7 @@
 export default class Filter {
+    /**
+     * Получение отфильтрованного списка товааров
+     */
     getFilteredValues(list, filters) {
         return list
             .filter(item => filters.price.end ? filters.price.end >= item.price : true)
