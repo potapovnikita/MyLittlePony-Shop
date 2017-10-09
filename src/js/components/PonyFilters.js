@@ -97,7 +97,7 @@ export default class extends Component {
             isNewPony: false,
         })
         setTimeout(() => {
-            this.setState({ isNew: this.state.isOldPony ? false : null })
+            this.setState({ isNew: !this.state.isOldPony ? null : false })
         })
     }
 
